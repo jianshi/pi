@@ -1,7 +1,9 @@
 import socket
 
+HOST, PORT = "192.168.0.7", 5556
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect(('192.168.0.7', 5556))
+sock.connect((HOST, PORT))
 
 msgList = ["a", "b", "c", "d"];
 try:
